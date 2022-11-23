@@ -47,10 +47,10 @@ this is the title that displayed in the web-browser tab
 this is where all the content go!
 
 #### inside the body
-<p> - Paragraph [simple paragraph] </p> 
-<h1..h6> - Headings and the number represent the heading level </h1..h6> 
-<strong> - Bold , really helpful for visual impairment </strong>
-<em> - emphasis on the text  </em> 
+```<p> - Paragraph [simple paragraph] </p> ```
+```<h1..h6> - Headings and the number represent the heading level </h1..h6> ```
+```<strong> - Bold , really helpful for visual impairment </strong>```
+```<em> - emphasis on the text  </em> ```
 
 ---------------------------------------------------------------------
 ### nesting and indentation 
@@ -58,4 +58,4 @@ this is where all the content go!
 when we nest element we crate parent and a child code
 ---------------------------------------------------------------------
 ### comments 
-<!-- comment here -->
+```<!-- comment here -->```

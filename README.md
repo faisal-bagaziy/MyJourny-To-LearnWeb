@@ -60,3 +60,28 @@ when we nest element we crate parent and a child code
 ---------------------------------------------------------------------
 ### comments 
 ```<!-- comment here -->```
+---------------------------------------------------------------------
+### Listsc
+```<ul>- unordered lists
+<ol>-ordered lists
+<li> each item witin the list ```
+many atrributes [start ="#number" , reversed, value=""]
+another type is description list ``` <dl> <dt> <dd>```
+it can be nested very usful!
+list have many styles: https://learn.shayhowe.com/html-css/creating-lists/
+
+---------------------------------------------------------------------
+### Links and images
+#### Links 
+Anchor elements - ```<a>```
+hyper link refrence -```herf attributes within the anchor```
+
+absloute links--protocol://domain/path
+relitive links-- links to other pages in our website
+"pages/about.html"
+"./pages/about.html" -- start looking from the current diractory 
+#### images
+```<img> - self closing
+need src=""```
+same linking princples apply [absloute and relitve]
+alt attribute- alterintive text

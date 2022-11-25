@@ -61,10 +61,11 @@ when we nest element we crate parent and a child code
 ### comments 
 ```<!-- comment here -->```
 ---------------------------------------------------------------------
-### Listsc
+### Lists
 ```<ul>- unordered lists
 <ol>-ordered lists
-<li> each item witin the list ```
+<li> each item witin the list 
+```
 many atrributes [start ="#number" , reversed, value=""]
 another type is description list ``` <dl> <dt> <dd>```
 it can be nested very usful!
@@ -82,6 +83,7 @@ relitive links-- links to other pages in our website
 "./pages/about.html" -- start looking from the current diractory 
 #### images
 ```<img> - self closing
-need src=""```
+need src=""
+```
 same linking princples apply [absloute and relitve]
 alt attribute- alterintive text

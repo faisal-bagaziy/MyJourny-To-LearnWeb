@@ -87,3 +87,103 @@ need src=""
 ```
 same linking princples apply [absloute and relitve]
 alt attribute- alterintive text
+
+---------------------------------------------------------------------
+# CSS
+BASIC syntax selector {
+  proprety: value;
+}
+comment 
+```
+/* comment */
+```
+
+```
+Note:
+A <div> is one of the basic HTML elements. It is simply an empty container. In general, it is best to use other tags such as <h1> or <p> for content in your projects, but as we learn more about CSS you’ll find that there are many cases where the thing you need is just a container for other elements. Many of our exercises use plain <div>s for simplicity. Later lessons will go into much more depth about when it is appropriate to use the various HTML elements.
+```
+## selector
+selector is simply refrer to the HTML element the css rule apply
+```
+universal selectors: *asterisk 
+type selectors: name of the element
+class selector: .className
+id selector: #idName
+```
+##### class vs id
+an element can have one id and id should not contain anywhite space
+##### grouping selectors 
+```
+nameofSelctor1,
+ nameofSelctor2{
+  property : values;
+}
+```
+chaining selectors
+chain selector as list
+this better explained with example
+```
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection preview">This is where a preview for a post might go.</p>
+</div>
+
+.subsection.header {
+  color: red;
+}
+
+this also work if you want to chain class into id 
+
+how does it work?
+it just concatenate subsectionheader and try to find it  
+.ancestor .child
+no limit for this chain 
+```
+
+### some frequant properties of css
+```
+color - set a text color
+background-color - set the background color
+they accept {HEX, RGB, HSL, KEYWORDS}
+```
+
+typography and text-align
+```
+font-family - 
+accept "font family name" or genric name font-name no white spaces
+```
+
+```
+note: 
+If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on until it finds a supported and valid font. This is why it’s best practice to include a list of values for this property, starting with the font you want to be used most and ending with a generic font family as a fallback, e.g. font-family: "Times New Roman", sans-serif;
+```
+
+```
+font-size: valuepx
+font-weight - affect the boldens of the text from 1 and 1000 , you can use the word bold which is equal to 700
+text-align - center for example
+```
+
+images height and width
+
+```
+By default, an <img> element’s height and width values will be the same as the actual image file’s height and width. If you wanted to adjust the size of the image without causing it to lose its proportions, you would use a value of “auto” for the height property and adjust the width value:
+
+img {
+  height: auto;
+  width: 500px;
+}
+
+For example, if an image’s original size was 500px height and 1000px width, using the above CSS would result in a height of 250px
+
+```
+## box-model
+>Every single thing on a webpage is a rectangular box. 
+
+### margin 
+> increase size between box and its nighbors this sometime include the whole page
+### padding 
+> increase the distance between the edge of box and its content
+### border 
+> add spaces between  margin and padding 
+

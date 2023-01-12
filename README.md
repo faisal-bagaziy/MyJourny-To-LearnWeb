@@ -182,8 +182,78 @@ For example, if an image’s original size was 500px height and 1000px width, us
 
 ### margin 
 > increase size between box and its nighbors this sometime include the whole page
+> https://css-tricks.com/almanac/properties/m/margin
 ### padding 
 > increase the distance between the edge of box and its content
 ### border 
 > add spaces between  margin and padding 
+
+## block vs inline
+> block elements will appear on the page stacked atop each other, each new element starting on a new line.
+> Inline elements do not start on a new line. They appear in line with whatever elements they are placed beside.
+
+## divs and spans 
+> divs and spans give no particular meaning to their content. They are just generic boxes that can contain anything.
+> Div is a block-level element by default. It is commonly used as a container element to group other elements. Divs allow us to divide the page into different blocks and apply styling to those blocks.
+>Span is an inline-level element by default. It can be used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.
+
+## normal flow 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow
+## inline-block
+https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block
+
+## Flex box
+
+> its a block elemets, container
+> Display: flex; organize the elements left to right
+> https://www.internetingishard.com/html-and-css/flexbox/
+> justify-content: {center, flex-start, flex-end, space-around, space-between}
+
+## flex
+
+> this a shorthand for 3 properties of flex items
+> These properties affect how flex items size themselves within their container.
+> the propties are flex-grow, flex-shrink and flex-basis.
+
+```
+div {
+  flex: 1;
+}
+```
+
+> this will apply flex-grow: 1, flex-shrink: 1, flex-basis: 0.
+> flex-grow: grow factor of flex items
+> flex-shrink: grow not larger than [min], shrink flex item if its larger than flex container fr example. tells the browser what the minimum size of an element should be.
+> flex-basis: take [ideal size] if not possible take up as much space proprtionally as it can
+> flex: [max] [min] [ideal size]; is a good way to see this
+> they all work togther!
+
+## axis
+
+> flex-direction
+> the defualt is horizontal, Row.
+> other possible value is column which is vertical direction
+> when using column as value we cant use the shorthand flex:1; for example.
+> when using column as value flex-basis refer to height not width.
+> adding row-reverse, colmn-reverse make the items oppsite to its original
+
+## allignment
+
+### justify content [main axis] [x-axis]
+
+> justify-content in the container with values{flex-start, flex-end, center, space-between, space-around, sapce-evenly}
+
+### align items [cross axis] [y-axis]
+
+> align-items in container with values {flex-start, flex-end, center, baseline, stretch}
+> note: when you change flex-direction to column justify content will take corss axis [y-axis] and align items take main axis [x-axis]
+
+### allign self
+
+> align-self:
+
+### gap
+
+> gap on a flex container simply adds a specified space between flex items
+
 
